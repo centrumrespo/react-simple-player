@@ -121,6 +121,8 @@ export interface PlayerProps {
    * Whether to autoplay the audio on mount.
    */
   autoPlay?: boolean;
+  
+  duration?: number;
 
   /**
    * Whether to hide volume slider.
@@ -153,6 +155,7 @@ export const Player: React.FC<PlayerProps> = ({
   height = defaultHeight,
   grey = [246, 248, 250],
   accent = [255, 0, 0],
+  duration,
   autoPlay,
   hideVolume,
   controls: controlsRef,
@@ -297,7 +300,7 @@ export const Player: React.FC<PlayerProps> = ({
       {seekArea}
       {!!state.duration && (
         <span className={timeClass} style={{color: color.contrast(0.85)}}>
-          {formatTime(state.time) + ' / ' + formatTime(state.duration)}
+          {formatTime(state.time) + ' / ' + formatTime(state.duration ?? duration)}
         </span>
       )}
       {volumeButton}
