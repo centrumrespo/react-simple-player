@@ -3,11 +3,11 @@
   "version": "1.1.0",
   "description": "",
   "author": {
-    "name": "streamich",
-    "url": "https://github.com/streamich"
+    "name": "centrumrespo",
+    "url": "https://github.com/centrumrespo"
   },
-  "homepage": "https://github.com/streamich/react-simple-player",
-  "repository": "streamich/react-simple-player",
+  "homepage": "https://github.com/centrumrespo/react-simple-player",
+  "repository": "centrumrespo/react-simple-player",
   "license": "Unlicense",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
