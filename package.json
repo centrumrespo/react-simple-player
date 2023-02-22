@@ -13,9 +13,6 @@
   "types": "lib/index.d.ts",
   "typings": "lib/index.d.ts",
   "sideEffects": false,
-  "files": [
-    "lib/"
-  ],
   "scripts": {
     "clean": "rimraf public/dist && yarn storybook:clean",
     "build": "tsc",
